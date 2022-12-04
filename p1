@@ -1,0 +1,17 @@
+
+from itertools import combinations_with_replacement
+
+   
+flavors = {'glazed' , 'chocolate' , 'strawberry'}
+      
+print ("There are: {flavors}")  
+
+donut_flavors = combinations_with_replacement(flavors, 6)
+
+
+
+index = 0
+for i in list(donut_flavors): 
+    index += 1
+    print(f'# {index}: ', end = '')
+    print (i) 
