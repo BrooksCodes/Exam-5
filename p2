@@ -1,0 +1,20 @@
+from itertools import combinations_with_replacement
+
+
+flavors =     ['plain' 'chocolate' , 'strawberry' ,'raspberry' ,'baked carrot cake' ,'Baked Lemon with Lemon Glaze',\
+               'Baked Cinnamon Sugar', 'Baked Funfetti' ,'Old-Fashioned Powdered Sugar' ,'Baked Jelly' ,'Chocolate Cake', \
+                  'Chocolate Frosted', 'Boston Cream', "blueberry Baked", 'Maple Bacon', 'Red Velvet', 'Key Lime Coconut', \
+                     ' Banana Bread', 'Strawberry Cake' ,'Sticky Orange Olive Oil', 'Mint Chocolate', \
+                         'Peanut Butter Glazed Chocolate', 'Pineapple Upside-Down' ,'Apple Fritters']
+
+print(f"Our flavors are: {flavors}")
+
+
+donut_combinations = combinations_with_replacement(flavors, 6)
+
+index = 0
+for i in list(donut_combinations):
+    index += 1
+    print(f'# {index}: ', end = '')
+    print (i)
+    
